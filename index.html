@@ -9,46 +9,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Simple Execution Time Estimator</h1>
-  <h2>Execution time in small input:</h2>
-  <table id="input">
-    <tr>
-      <th>size</th>
-      <th>time</th>
-    </tr>
-    <tr>
-      <td class="editable">10</td>
-      <td class="editable">0.001</td>
-    </tr>
-    <tr>
-      <td class="editable">20</td>
-      <td class="editable">0.02</td>
-    </tr>
-  </table>
-  <h2>Time Order:</h2>
-  <select id="order">
-    <option>Logarithmic: O(log(N))</option>
-    <option>O(√N)</option>
-    <option>Linear: O(N)</option>
-    <option>O(Nlog(N))</option>
-    <option>Quadratic: O(N²)</option>
-    <option>O(N²log(N))</option>
-    <option>Cubic: O(N³)</option>
-    <option>Quartic: O(N⁴)</option>
-    <option>Exponential: O(2ᴺ)</option>
-    <option>O(N2ᴺ)</option>
-    <option>Factorial: O(N!)</option>
-    <option>Manual Input (Not Available)</option>
-    <option>Auto Detect (Not Available)</option>
-  </select>
-  <button id="calc">Calculate</button>
-  <h2>Description:</h2>
-  <p>
-    This tool estimates a execution time by using time with smaller input and a simple formula:<br>
-    \[
-      a + bf(N)
-    \]
-    Here \(N\) is a size of input, \(f(x)\) is an order of execution time.
-  </p>
+  <div>
+    <h1>Simple Execution Time Estimator</h1>
+    <h2>Execution time in small input:</h2>
+    <table id="input">
+      <tr>
+        <th>size</th>
+        <th>time</th>
+      </tr>
+      <tr>
+        <td class="editable">10</td>
+        <td class="editable">0.001</td>
+      </tr>
+      <tr>
+        <td class="editable">20</td>
+        <td class="editable">0.02</td>
+      </tr>
+    </table>
+    <h2>Time Order:</h2>
+    <select id="order">
+      <option>Logarithmic: O(log(N))</option>
+      <option>O(√N)</option>
+      <option>Linear: O(N)</option>
+      <option>O(Nlog(N))</option>
+      <option>Quadratic: O(N²)</option>
+      <option>O(N²log(N))</option>
+      <option>Cubic: O(N³)</option>
+      <option>Quartic: O(N⁴)</option>
+      <option>Exponential: O(2ᴺ)</option>
+      <option>O(N2ᴺ)</option>
+      <option>Factorial: O(N!)</option>
+      <option>Manual Input (Not Available)</option>
+      <option>Auto Detect (Not Available)</option>
+    </select>
+    <button id="calc">Calculate</button>
+    <h2>Description:</h2>
+    <p>
+      This tool estimates a execution time by using time with smaller input and a simple formula:<br>
+      \[
+        a + bf(N)
+      \]
+      Here \(N\) is a size of input, \(f(x)\) is an order of execution time.
+    </p>
+  </div>
 </body>
 </html>
