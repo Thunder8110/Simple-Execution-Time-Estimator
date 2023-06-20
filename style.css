@@ -4,6 +4,12 @@ body {
   margin: auto;
 }
 
+div#main {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+}
+
 h1 {
   border-bottom: solid 3px black;
 }
