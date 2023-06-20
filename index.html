@@ -50,7 +50,13 @@
       Estimation input size:
       <input type="number" id="estSize">
     </p>
-    <button id="calc">Calculate</button>
+    <p><button id="calc">Calculate</button></p>
+    <h3>result:</h3>
+    <p>\(a\): <input type="text" id="resA" readonly></p>
+    <p>\(b\): <input type="text" id="resB" readonly></p>
+    <p>Estimated Time: <input type="text" id="resTime" readonly></p>
+    <p>\(f(N)=\)</p>
+    <p></p>
     <h2>Description:</h2>
     <p>
       This tool estimates a execution time by using time with smaller input and a simple formula:<br>
@@ -58,6 +64,7 @@
         a + bf(N)
       \]
       Here \(N\) is a size of input, \(f(x)\) is an order of execution time.
+      \(a, b\) are the constant which are calculated by this tool.
     </p>
   </div>
 </body>
