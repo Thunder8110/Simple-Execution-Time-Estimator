@@ -1,1 +1,44 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Execution Time Estimator</title>
+</head>
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  <h1>Simple Execution Time Estimator</h1>
+  <p>Execution time in small input:</p>
+  <table id="input">
+    <tr>
+      <td>size</td>
+      <td>time</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>0.02</td>
+    </tr>
+  </table>
+  <p>Time Order:</p>
+  <select id="order">
+    <option>Logarithmic: O(log(N))</option>
+    <option>O(√N)</option>
+    <option>Linear: O(N)</option>
+    <option>O(Nlog(N))</option>
+    <option>Quadratic: O(N²)</option>
+    <option>O(N²log(N))</option>
+    <option>Cubic: O(N³)</option>
+    <option>Quartic: O(N⁴)</option>
+    <option>Exponential: O(2ᴺ)</option>
+    <option>O(N2ᴺ)</option>
+    <option>Factorial: O(N!)</option>
+    <option>Manual Input (Not Available)</option>
+    <option>Auto Detect (Not Available)</option>
+  </select>
+  <button id="calc">Calculate</button>
+</body>
+</html>
