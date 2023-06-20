@@ -11,7 +11,8 @@
 <body>
   <div id="main">
     <h1>Simple Execution Time Estimator</h1>
-    <h2>Execution time in small input:</h2>
+    <h2>Input:</h2>
+    <h3>Execution time in small input:</h3>
     <table id="input">
       <tr>
         <th>size</th>
@@ -26,7 +27,8 @@
         <td>0.02</td>
       </tr>
     </table>
-    <h2>Time Order:</h2>
+    <h3>Setting:</h3>
+    <p>Time order:</p>
     <select id="order">
       <option>Logarithmic: O(log(N))</option>
       <option>O(√N)</option>
@@ -41,7 +43,9 @@
       <option>Factorial: O(N!)</option>
       <option>Manual Input (Not Available)</option>
       <option>Auto Detect (Not Available)</option>
-    </select>
+    </select><br>
+    <p>Estimation input size:</p>
+    <input type="number" id="estSize">
     <button id="calc">Calculate</button>
     <h2>Description:</h2>
     <p>
