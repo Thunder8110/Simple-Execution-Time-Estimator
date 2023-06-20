@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Execution Time Estimator</title>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
-  <script type="text/javascript" src="script.js"></script>
   <h1>Simple Execution Time Estimator</h1>
-  <p>Execution time in small input:</p>
+  <h2>Execution time in small input:</h2>
   <table id="input">
     <tr>
       <td>size</td>
       <td>time</td>
     </tr>
     <tr>
-      <td>10</td>
-      <td>0.001</td>
+      <td class="editable">10</td>
+      <td class="editable">0.001</td>
     </tr>
     <tr>
-      <td>20</td>
-      <td>0.02</td>
+      <td class="editable">20</td>
+      <td class="editable">0.02</td>
     </tr>
   </table>
-  <p>Time Order:</p>
+  <h2>Time Order:</h2>
   <select id="order">
     <option>Logarithmic: O(log(N))</option>
     <option>O(√N)</option>
@@ -40,5 +41,13 @@
     <option>Auto Detect (Not Available)</option>
   </select>
   <button id="calc">Calculate</button>
+  <h2>Description:</h2>
+  <p>
+    This tool estimates a execution time by using time with smaller input and a simple formula:<br>
+    \[
+      a + bf(N)
+    \]
+    Here \(N\) is a size of input, \(f(x)\) is an order of execution time.
+  </p>
 </body>
 </html>
