@@ -26,3 +26,40 @@ table td {
   border-color: black;
   text-align: right;
 }
+
+p.nopadding {
+  line-height: 0;
+}
+
+a.btn {
+  border: 2px solid black;
+  border-radius: 0;
+  background: white;
+}
+
+a.btn:hover {
+  color: white;
+  background: black;
+}
+
+a.bRed {
+  border: 2px solid red;
+  background: white;
+  padding: 0rem 0.2rem;
+}
+
+a.bRed:hover {
+  background: red;
+  padding: 0rem 0.2rem;
+}
+
+a.bBlue {
+  border: 2px solid blue;
+  background: white;
+  padding: 0rem 0.2rem;
+}
+
+a.bBlue:hover {
+  background: blue;
+  padding: 0rem 0.2rem;
+}

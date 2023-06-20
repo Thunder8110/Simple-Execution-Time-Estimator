@@ -13,6 +13,10 @@
     <h1>Simple Execution Time Estimator</h1>
     <h2>Input:</h2>
     <h3>Execution time in small input:</h3>
+    <p class="nopadding">
+      <a class="btn bRed" id="addRow">+</a>
+      <a class="btn bBlue" id="remRow">−</a>
+    </p>
     <table id="input">
       <tr>
         <th>size</th>
@@ -50,12 +54,12 @@
       Estimation input size:
       <input type="number" id="estSize">
     </p>
-    <p><button id="calc">Calculate</button></p>
+    <a class="btn" id="calc">Calculate</a>
     <h3>result:</h3>
     <p>\(a\): <input type="text" id="resA" readonly></p>
     <p>\(b\): <input type="text" id="resB" readonly></p>
     <p>Estimated Time: <input type="text" id="resTime" readonly></p>
-    <p>\(f(N)=\)</p>
+    <p id="func">\(f(N)=\)</p>
     <p></p>
     <h2>Description:</h2>
     <p>
