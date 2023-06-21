@@ -14,7 +14,9 @@ window.addEventListener("load", function () {
   let resultTime = document.getElementById("resTime");
   let func = document.getElementById("func");
 
-  const funcText = []
+  const funcText = {"logn": "\\log N", "sqrtn": "\\sqrt{N}", "n": "N", "nlogn": "N\\log N", "n2": "N^2", "n2logn": "N^2\\log N",
+                    "n3": "N^3", "n4": "N^4", "2-n": "2^N", "n2-n": "N2^N", "nfc": "N!"
+                   }
 
   function addRow() {
     let newRow = document.createElement("tr");
@@ -36,17 +38,19 @@ window.addEventListener("load", function () {
   }
 
   function calculate() {
-    // TODO
+    showResult(0, 0, 0, orderSelect.value)
   }
 
   function showResult(a, b, tm, fc) {
-    resultA.textContent = a
-    resultB.textContent = b
-    resultTime.textContent = tm
-    func.textContent = fc
+    resultA.textContent = a;
+    resultB.textContent = b;
+    resultTime.textContent = tm;
+    func.textContent = "\\(f(N)=" + funcText[fc] + "\\)";
+    MathJax.typeset([func]);
   }
 
   addRowButton.addEventListener("click", addRow);
   remRowButton.addEventListener("click", remRow);
+  calcButton.addEventListener("click", calculate);
 });
 
