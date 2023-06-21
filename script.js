@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
   let resultB = document.getElementById("resB");
   let resultTime = document.getElementById("resTime");
   let func = document.getElementById("func");
-  let verText = this.document.getElementById("version");
+  let verText = document.getElementById("version");
 
   const ver = "v0.0.1"
   const funcText = {"logn": "\\log N", "sqrtn": "\\sqrt{N}", "n": "N", "nlogn": "N\\log N", "n2": "N^2", "n2logn": "N^2\\log N",
