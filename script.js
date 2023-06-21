@@ -14,6 +14,8 @@ window.addEventListener("load", function () {
   let resultTime = document.getElementById("resTime");
   let func = document.getElementById("func");
 
+  const funcText = []
+
   function addRow() {
     let newRow = document.createElement("tr");
     let newData1 = document.createElement("td");
@@ -35,6 +37,13 @@ window.addEventListener("load", function () {
 
   function calculate() {
     // TODO
+  }
+
+  function showResult(a, b, tm, fc) {
+    resultA.textContent = a
+    resultB.textContent = b
+    resultTime.textContent = tm
+    func.textContent = fc
   }
 
   addRowButton.addEventListener("click", addRow);
