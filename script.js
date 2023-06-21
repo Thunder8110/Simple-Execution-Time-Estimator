@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   document.querySelectorAll("table td").forEach(elm => {
     elm.contentEditable = true;
   });
-});
+  
 
 let addRowButton = document.getElementById("addRow");
 let remRowButton = document.getElementById("remRow");
