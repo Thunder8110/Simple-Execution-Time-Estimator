@@ -7,8 +7,8 @@ div#main {
 }
 
 .version {
+  text-align: right;
   color: gray;
-  font-size: 80%;
 }
 
 h1 {
